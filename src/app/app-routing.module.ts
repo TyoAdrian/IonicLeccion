@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'bns1',
     loadChildren: () => import('./Pages/bns1/bns1.module').then( m => m.BNS1PageModule)
   },
+  {
+    path: 'action-sheet',
+    loadChildren: () => import('./pages/action-sheet/action-sheet.module').then( m => m.ActionSheetPageModule)
+  },
 ];
 
 @NgModule({
